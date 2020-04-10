@@ -1,0 +1,10 @@
+1.constant cant be changed once declared.
+2.constant are case -sensitive
+3.can be accesed via :: operator
+4.these are declared by const keyword
+
+class Google{
+    
+    const variable=10;
+}
+echo Google::variable;
