@@ -21,6 +21,7 @@ class Strawberry extends Fruit {
 $strawberry = new Strawberry("Strawberry", "red", 50);
 $strawberry->intro();
 ?>
-
+output:
+  Class Strawberry may not inherit from final class (Fruit) in <b>[...][...]
 
 
