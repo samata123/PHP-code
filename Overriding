@@ -1,0 +1,29 @@
+overriding is the process of redefing the parent class methods(same name) in child class.
+<?php
+        //Enter your code here, enjoy
+        
+class Test 
+{
+    
+   public function get_name()
+   {
+       echo "hii";
+   }
+    
+}
+class childtest extends Test
+{
+    public function get_name()
+    {
+        echo "hello";
+    }
+}
+
+$child= new childtest();
+echo $child->get_name("apple");
+ ///////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+ 
+ 
+ 
