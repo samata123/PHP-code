@@ -1,0 +1,26 @@
+final keyword can be used to prevent class inheritence or to prevent method overriding
+
+<?php
+final class Fruit {
+  public $name;
+  public $color;
+ 
+  public function intro() {
+    echo "The fruit is {$this->name} and the color is {$this->color}.";
+  }
+}
+
+class Strawberry extends Fruit {
+  public $weight;
+  
+  public function intro() {
+    echo "The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.";
+  }
+}
+
+$strawberry = new Strawberry("Strawberry", "red", 50);
+$strawberry->intro();
+?>
+
+
+
