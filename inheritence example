@@ -1,0 +1,34 @@
+inheritence is relationship between two classes.
+An inherited class is defined by using the extends keyword.
+
+The Strawberry class is inherited from the Fruit class.
+
+This means that the Strawberry class can use the public $name and $color properties as well as the public __construct() and intro() methods from the Fruit class because of inheritance.
+
+The Strawberry class also has its own method: message().
+
+<?php
+
+class Fruit{
+    public $name;
+    public $color;
+    
+    public function get_name($name)
+    {
+       return $this->name=$name;
+       
+    }
+}
+class apple extends fruit
+{
+  public function get_cat()
+  {
+      echo "cateory is fruits";
+  }
+}
+
+$apple =new apple();
+echo $apple->get_name("apple");
+echo "<br/>";
+echo $apple ->get_cat();
+
