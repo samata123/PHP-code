@@ -1,0 +1,66 @@
+<?php
+        //Enter your code here, e
+        
+/*class Fruit{
+    public $name;
+    public $color;
+    
+    
+    function __construct($name,$color)
+    {
+      $this->name=$name;
+      $this->color=$color;
+    }
+     function get_name()
+    {
+       return $this->name;
+    }
+    function get_color()
+    {
+        return $this->color;
+    }
+    
+}
+   // $apple = new Fruit("applle","red");
+    //echo $apple ->get_name();
+    //echo $apple ->get_color();
+    
+//class Test{
+  //  public $newvalue;
+//}  
+
+//$newobj=new Test();
+//echo $newobj->newvalue=10;
+    
+    
+$apple=new Fruit("aple","red");
+var_dump($apple instanceof Fruit);*/
+
+class Fruit{
+    public $name;
+    public $color;
+    function __construct($name){
+        $this->name=$name;
+    }
+    function __destruct()
+        {
+            echo "color of the fruit is {$this->name}";
+        }
+    }
+    $apple=new Fruit("apple");
+    
+    
+     class Newfruit {
+        public $name;
+        public $color;        
+    }
+    
+    
+    
+    
+
+
+
+
+        
+?>; 
