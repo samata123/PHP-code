@@ -1,0 +1,30 @@
+
+
+<?php
+        //Enter your code here, enjoy!
+interface machine
+{
+    public function caltask();
+}
+class circle implements machine
+{
+    public function caltask()
+    {
+        echo "hiii";
+    }
+}
+class rectangle implements machine
+{
+   // public $name;
+    public function caltask()
+    {
+        echo "heloo";
+       // echo $name;
+    }
+}
+
+$cirlce=new circle();
+$rectangle =new rectangle();
+echo $cirlce->caltask();
+echo $rectangle ->caltask("apple");
+
