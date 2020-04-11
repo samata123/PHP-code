@@ -1,0 +1,13 @@
+traits are used to declare methods that can be used in multiple classes.Traits declared with traits keyword.
+
+trait message
+{
+public function new_method(){
+echo "hii";
+}
+}
+class text{
+use message;
+}
+$obj=new text();
+$obj->new_method();
