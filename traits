@@ -11,3 +11,43 @@ use message;
 }
 $obj=new text();
 $obj->new_method();
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<?php
+
+trait message
+{
+public function new_method(){
+echo "hii";
+}
+}
+trait messag1
+{
+    public function new1_method(){
+        echo "hello";
+    }
+}
+class text{
+use message;
+}
+class imagetxt{
+    use message,messag1;
+}
+$obj=new text();
+$obj->new_method();
+
+
+$obj1= new imagetxt();
+
+$obj1->new_method();
+$obj1->new1_method();
+
+
+
+
+?>
+
+}
+}
+
+?>
