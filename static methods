@@ -1,0 +1,27 @@
+static methods are called directly without creating instance of the class.static methods are declared using static keyword.
+
+class greeting{
+public static function welcome()
+{
+echo "hii";
+}
+}
+greeting::welcome();
+}
+/////////////////////
+
+class greeting{
+public static function welcome()
+{
+echo "hii";
+}
+}
+class guest{
+public function baars(){
+greeting::welcome();
+}
+}
+$object= new guest();
+$object->baars();
+
+
